@@ -12,3 +12,26 @@ This Named Entity Recognition (NER) model is one of my initial projects in Natur
 2. **Resume Parsing**: Identifying key information such as skills, experiences, and contact details from resumes, aiding in automated recruitment processes.
 3. **Medical Record Analysis**: Recognizing entities like diseases, treatments, and patient names from medical records, facilitating medical research and patient care.
 And a lot more.
+
+
+## [The Siamese model](https://github.com/daunyl/NLP-Projects/tree/main/Siamese%20Model)
+is designed to determine whether pairs of questions are duplicates or not. Here's a breakdown of its structure:
+![image](https://github.com/daunyl/NLP-Projects/assets/137568373/40b83528-a1e6-4303-9aa0-d65525718a7a)
+
+### 5 Layers:
+- `Text Vectorization`: This layer processes the input text and converts it into numerical representations.
+- `Embedding Layer`: Converts the numerical representations into dense vectors of fixed size, which capture semantic information about the words.
+- `LSTM (Long Short-Term Memory)`: A recurrent neural network layer that processes sequences of data, capturing dependencies between words in the text.
+- `Global Average Pooling 1D`: Aggregates the output of the LSTM layer across time steps, providing a fixed-length representation of the entire input sequence.
+- `Lambda Layer`: Normalizes the output vector to unit length using L2 normalization, which helps in making the model robust to variations in input length.
+
+
+`Input Layers`:
+Two input layers, each taking a single string as input (input_1 and input_2).
+### Model Architecture:
+Both inputs are processed through the same set of layers, making use of weight sharing.
+The model architecture follows the siamese approach, where two identical branches process each input separately, and their outputs are then concatenated.
+Concatenation Layer:
+Concatenates the outputs of the two branches along the feature dimension (axis=1), producing a single feature vector representing both inputs.
+
+**This Siamese model is a powerful tool for identifying duplicate questions, with its ability to learn nuanced similarities between pairs of questions.**
