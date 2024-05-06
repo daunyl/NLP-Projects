@@ -1,9 +1,10 @@
 # NLP-Projects
 This is a repository dedicated to showcasing projects developed using Natural Language Processing (NLP) techniques. From sentiment analysis to text generation, this repository features various NLP applications.
 
+<img src="https://github.com/daunyl/NLP-Projects/assets/137568373/b477cdb4-47e4-4323-a9f5-20c7110abae1">
 
-## [NER Model](https://github.com/daunyl/NLP-Projects/tree/main/NER%20Model)
-![image](https://github.com/daunyl/NLP-Projects/assets/137568373/f0a9e759-bad9-4ac6-8318-3627e5e0a926)
+## 1. [NER Model](https://github.com/daunyl/NLP-Projects/tree/main/NER%20Model)
+<img src="https://github.com/daunyl/NLP-Projects/assets/137568373/f0a9e759-bad9-4ac6-8318-3627e5e0a926" width="500" height="300">
 
 This Named Entity Recognition (NER) model is one of my initial projects in Natural Language Processing (NLP), built primarily with TensorFlow. Leveraging TensorFlow's straightforward syntax and rich set of functions, this project was both a learning experience and a practical tool for identifying named entities within text.
 
@@ -14,9 +15,10 @@ This Named Entity Recognition (NER) model is one of my initial projects in Natur
 And a lot more.
 
 
-## [The Siamese model](https://github.com/daunyl/NLP-Projects/tree/main/Siamese%20Model)
+## 2. [The Siamese model](https://github.com/daunyl/NLP-Projects/tree/main/Siamese%20Model)
 is designed to determine whether pairs of questions are duplicates or not. Here's a breakdown of its structure:
-![image](https://github.com/daunyl/NLP-Projects/assets/137568373/40b83528-a1e6-4303-9aa0-d65525718a7a)
+<img src="https://github.com/daunyl/NLP-Projects/assets/137568373/af2399c7-7924-4a4d-9f4d-1adf060238d7" width="500" height="300">
+
 
 ### 5 Layers:
 - `Text Vectorization`: This layer processes the input text and converts it into numerical representations.
@@ -36,7 +38,8 @@ Concatenates the outputs of the two branches along the feature dimension (axis=1
 
 **This Siamese model is a powerful tool for identifying duplicate questions, with its ability to learn nuanced similarities between pairs of questions.**
 
-## [Neural Machine Translation (NMT) Project](https://github.com/daunyl/NLP-Projects/tree/main/Neural%20Machine%20Translation)
+## 3. [Neural Machine Translation (NMT) Project](https://github.com/daunyl/NLP-Projects/tree/main/Neural%20Machine%20Translation)
+<img src="https://github.com/daunyl/NLP-Projects/assets/137568373/59e0e0f4-7c06-46f0-b1ea-9e1a4e8cf95e" width="500" height="500">
 
 This project implements a Neural Machine Translation (NMT) model for translating text from one language to another. The architecture comprises an encoder and a decoder, both utilizing Long Short-Term Memory (LSTM) networks with attention mechanisms.
 
