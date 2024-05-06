@@ -35,3 +35,36 @@ Concatenation Layer:
 Concatenates the outputs of the two branches along the feature dimension (axis=1), producing a single feature vector representing both inputs.
 
 **This Siamese model is a powerful tool for identifying duplicate questions, with its ability to learn nuanced similarities between pairs of questions.**
+
+## [Neural Machine Translation (NMT) Project](https://github.com/daunyl/NLP-Projects/tree/main/Neural%20Machine%20Translation)
+
+This project implements a Neural Machine Translation (NMT) model for translating text from one language to another. The architecture comprises an encoder and a decoder, both utilizing Long Short-Term Memory (LSTM) networks with attention mechanisms.
+
+### Model Architecture:
+
+- **Encoder**:
+  - The encoder processes the input sentence to create a fixed-length representation.
+  - **Embedding Layer**: Maps words to dense vectors, capturing semantic information.
+  - **Bidirectional LSTM**: Captures contextual information from both directions of the input sequence.
+
+- **Decoder**:
+  - The decoder generates the output sentence based on the encoder's representation and previously generated tokens.
+  - **Embedding Layer**: Converts the input tokens into dense vectors.
+  - **Pre-Attention LSTM**: Processes the input tokens while maintaining hidden and cell states.
+  - **Attention Mechanism**: Focuses on relevant parts of the input during decoding.
+  - **Post-Attention LSTM**: Processes the attended output from the encoder.
+  - **Output Layer**: Produces probabilities of each token in the target vocabulary using a softmax function.
+
+- **Translator Model**:
+  - Combines the encoder and decoder into a single model.
+  - Takes a tuple of input context (source sentence) and target (shifted-to-the-right translation) as input.
+  - Generates log probabilities of each token in the target vocabulary.
+
+### Model Usage:
+1. **Training**: Train the model on parallel corpora with source-target language pairs.
+2. **Inference**: Translate sentences by passing the source sentence through the encoder and decoding the output using beam search or greedy decoding.
+
+### Example Application:
+- **Translation of Text**: Translating sentences from one language to another, enabling cross-lingual communication and understanding.
+
+This NMT project provides a powerful tool for automated translation, with its ability to capture complex patterns and dependencies in language data.
